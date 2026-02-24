@@ -2,12 +2,116 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Privacy Policy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy | GRAP</title>
     <link rel="stylesheet" href="css/legal.css" />
   </head>
   <body>
-    <a href="index.html">← Back Home</a>
-    <h1>Privacy Policy</h1>
-    <p>This is a test of the Privacy Policy page setup.</p>
+    <div class="container">
+      <a class="back-link" href="index.html">← Back Home</a>
+
+      <h1>Privacy Policy</h1>
+      <p class="last-updated">Last updated: <span id="update-date"></span></p>
+
+      <p>
+        GRAP (“we,” “our,” or “us”) operates a quick commerce mobile application
+        providing delivery of groceries and everyday essentials within 15–20
+        minutes in Colombo, Sri Lanka.
+      </p>
+
+      <h2>1. Information We Collect</h2>
+
+      <h3>a) Personal Information</h3>
+      <ul>
+        <li>Phone number (for OTP verification and account login)</li>
+        <li>Full name</li>
+        <li>Delivery address</li>
+      </ul>
+
+      <h3>b) Location Information</h3>
+      <p>
+        GRAP does not automatically track your device location. Users manually
+        select their delivery location within the app using map functionality.
+        The selected address is stored only for order fulfillment purposes.
+      </p>
+
+      <h3>c) Order Information</h3>
+      <ul>
+        <li>Order history</li>
+        <li>Purchased items</li>
+        <li>Delivery instructions</li>
+      </ul>
+      <p>
+        GRAP currently supports Cash on Delivery only. We do not collect or
+        store any card or online payment information.
+      </p>
+
+      <h2>2. How We Use Your Information</h2>
+      <ul>
+        <li>Create and manage your account</li>
+        <li>Verify your identity via OTP</li>
+        <li>Process and deliver orders</li>
+        <li>Provide customer support</li>
+        <li>Improve our services</li>
+        <li>Prevent fraud and misuse</li>
+      </ul>
+
+      <h2>3. Third-Party Services</h2>
+      <p>
+        GRAP uses third-party services strictly for app functionality, including
+        mapping services provided via the Google Maps SDK.
+      </p>
+
+      <h2>4. Data Sharing</h2>
+      <p>
+        We may share necessary information with delivery personnel to fulfill
+        your order. We do not sell, rent, or trade your personal information.
+      </p>
+
+      <h2>5. Data Security</h2>
+      <p>
+        All communication between your device and our servers is encrypted using
+        secure HTTPS connections.
+      </p>
+
+      <h2>6. Data Retention</h2>
+      <p>
+        We retain personal information only as long as necessary to provide our
+        services and comply with legal obligations.
+      </p>
+
+      <h2>7. Your Rights</h2>
+      <p>
+        You may request access, correction, or deletion of your data by
+        contacting us at:
+      </p>
+      <p><strong>Email:</strong> yasirfwz17@gmail.com</p>
+
+      <h2>8. Children’s Privacy</h2>
+      <p>
+        GRAP is intended for users aged 18 and above. We do not knowingly
+        collect data from individuals under 18 years of age.
+      </p>
+
+      <h2>9. Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy periodically. Changes will be
+        reflected by updating the date above.
+      </p>
+
+      <h2>10. Contact Information</h2>
+      <p>
+        Company: GRAP<br />
+        Location: Colombo, Sri Lanka<br />
+        Email: yasirfwz17@gmail.com
+      </p>
+    </div>
+
+    <script>
+      // Auto-update date
+      const dateElement = document.getElementById("update-date");
+      const options = { year: "numeric", month: "long", day: "numeric" };
+      dateElement.textContent = new Date().toLocaleDateString("en-US", options);
+    </script>
   </body>
 </html>
